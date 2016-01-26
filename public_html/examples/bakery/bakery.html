@@ -1,56 +1,73 @@
 <!DOCTYPE html>
-
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <title>Bakery</title>
+        <title>Responsive Bakery</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="bakery1sml.css"/>
-        <link rel="stylesheet" media="screen and (min-width: 560px)" href="bakery1bg.css"/>
-        
+        <!-- Latest compiled and minified CSS -->
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- begin page styling -->
+        <style>
+            body {
+                background: lightgoldenrodyellow;
+            }
+            #main-nav{
+                z-index: 10;
+            }
+            #specials-car .carousel-inner{
+                height: 100px;
+            }
+        </style>
+        <!-- end page styling -->
+
     </head>
     <body>
-        
+        <div class="container-fluid">
 
-        <header id="title-header">
-            <h1><span>Portland Maine Local Bakery</span></h1>
-            <nav id="bakery-nav">
-                <a>Menu</a><a>Meet the Staff</a><a>Directions</a><a>Contact</a>
+            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="1" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Basic Topnav</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
             </nav>
-        </header>
-        <div class="left-info"><h2>Hours:</h2>Sunday<br>Monday<br>Tuesday<br>Wednesday<br>Thursday<br>Friday<br>Saturday<br><br>
-            <img class="food-pic" src="img/Chocolate_Cake_Flourless_(1).jpg">
-            <img class="food-pic" src="img/MinnesotaCountyFairApplePie2006.JPG">
-            <img class="food-pic" src="img/Tarte_à_la_mirabelle_-_20050831.jpeg"/>
+
+            <div id="specials-car" class="carousel slide col-md-12 col-sm-9 hidden-xs col-md-offset-0" data-ride="carousel">
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner " role="listbox">
+
+                    <div class="item active" style="background: linear-gradient(white,blue);">
+                        Catering
+                    </div>
+                    <div class="item" style="background: linear-gradient(to right, red,green);">
+                        Hosting
+                    </div>
+                    <div class="item">
+                    </div>
+                    <div class="item">
+                    </div>
+
+                </div>
+
+            </div>
+
+
         </div>
-        <div class="main">
-
-            Alice in Chains is an American rock band formed in Seattle, Washington, in 1987 by guitarist and songwriter Jerry Cantrell and original lead vocalist Layne Staley. The initial lineup was rounded out by drummer Sean Kinney and bassist Mike Starr, who was replaced in 1993 by Mike Inez.
-
-            Although widely associated with grunge music, the band's sound incorporates heavy metal elements. Since its formation, Alice in Chains has released five studio albums, three EPs, two live albums, four compilations, and two DVDs. The band is known for its distinctive vocal style, which often included the harmonized vocals of Staley and Cantrell (And later William DuVall).
-
-            Alice in Chains rose to international fame as part of the grunge movement of the early 1990s, along with other Seattle bands such as Nirvana, Pearl Jam, and Soundgarden. The band was one of the most successful music acts of the 1990s, selling over 20 million albums worldwide,[1] and over 14 million in the US alone.[2] In 1992 the band's second album, Dirt, was released to critical acclaim and was certified quadruple platinum. Their third album, Alice in Chains, was released in 1995 and has been certified double platinum. Both albums achieved No. 1 Billboard 200 releases. The band has had 14 top ten songs on the Mainstream Rock Tracks chart and nine Grammy Award nominations.
-            <hr>
-            The word nirvāṇa is from the verbal root √vā “blow” in the form of past participle vāna “blown”, prefixed with the preverb nis meaning “out”. Hence the original meaning of the word is “blown out, extinguished”. Sandhi changes the spelling: the v of vāna causes nis to become nir, and then the r of nir causes retroflexion of the following n: nis+vāna > nirvāṇa. The term is used in the sense of “dead” in the Mahābhārata (i.e. “life extinguished”). [Monier-Williams Sanskrit English Dictionary sv nirvāṇa]
-
-            Nirvāṇa is composed of the three phones ni and va and na:
-
-            ni (realized as nir, nis, nih): “out, away from, without”, used to negate
-            vā: “blowing” as in “blowing of the wind”, also as “smelling”[9]
-            na: a suffix that turns vā into a past participle.
-
-
-        </div>
-        <div class="right-info">
-            <img class="food-pic" src="img/Rogalik.jpg">
-            <img class="food-pic" src="img/Morning_baguettes.jpg">
-            <img src="img/Pan_asturiano.JPG" class="food-pic">
-            <img src="img/Focaccia-erbe-olive.jpg" class="food-pic">
-        </div>
-        <footer>
-            <div>Park Ave.<br>
-                Portland Maine<br>
-                04101</div>
-        </footer>
     </body>
 </html>
