@@ -1,0 +1,48 @@
+{
+    "pages": [
+        
+        {
+            "name": "Fungus",
+            "html5": true,
+            "css": true,
+            "js": false,
+            "angular": false,
+            "responsive": true,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "examples/fungus/index.html",
+            "imgurl":"examples/fungus/funguspreview.png",
+            "description": "Work in progess. Features bootstrap carousel and animated buttons."
+        },
+        {
+            "name": "Celestial",
+            "html5": true,
+            "css": true,
+            "js": false,
+            "angular": false,
+            "responsive": true,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "examples/sun/index.html",
+            "description": "A responsive design created using bootstrap, css animations, and fixed backgrounds.",
+            "imgurl":"examples/sun/sunpreview.png"
+        },
+        {
+            "name": "Bakery",
+            "html5": true,
+            "css": true,
+            "js": false,
+            "angular": false,
+            "responsive": true,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "examples/bakery/bakery.html",
+            "description": "A local bakery static webpage",
+            "imgurl": "examples/bakery/img/bakery.jpg"
+        }
+
+    ]
+}

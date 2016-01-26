@@ -1,0 +1,116 @@
+
+/* 
+    Created on : Jan 19, 2016, 8:10:27 PM
+    Author     : Grant
+*/
+
+body{
+    background: aliceblue;
+}
+.top-nav a {
+    width: 100px;
+    height: 50px;
+    border: black thin solid;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 1em;
+    box-sizing: border-box;
+    background: radial-gradient(circle,white 40%,lightblue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.top-nav a::first-letter{
+    font-size: 120%;
+    color: maroon;
+}
+.top-nav{
+    background: linear-gradient(to right,white,navy);
+}
+.top-nav a:hover{
+    background: radial-gradient(circle,lightblue 40%,white);
+    cursor: pointer;
+}
+.top-nav a:hover::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: lightseagreen;
+    left: 40px;
+    bottom: -11px;
+    transform: rotate(45deg);
+    border-top: black thin solid;
+    border-left: black thin solid;
+    border-top-left-radius: 5px;
+    box-shadow: -2px -2px 4px -1px grey;
+}
+.top-nav::after{
+    display: block;
+    content: "";
+    background: linear-gradient(to bottom right, lightseagreen 30%,lightgrey);
+    height: 40px;
+    border-top: black thin solid;
+    border-bottom: navy medium ridge;
+}
+
+.item , .item img{
+    height: 400px;
+    margin: auto;
+}
+ul.fungal-list{
+    list-style: none;
+    padding: 0;
+}
+ul.fungal-list li{
+    font-family: Pacifico;
+    font-size: 150%;
+    padding: 0.2em;
+    margin-top: .79em;
+    background: navy;
+    border-radius: 10px;
+    border-left: darkslateblue medium solid;
+    border-top: darkslateblue thin solid;
+    box-sizing: border-box;
+    box-shadow: black 3px 1px  6px;
+    color: white;
+    display: inline-block;
+    width: 160px;
+}
+ul.fungal-list li:hover{
+    border-left: none;
+    box-shadow: none;
+    border: navy thin solid;
+    cursor: pointer;
+}
+ul.fungal-list li::before{
+    content: "\1f344  ";
+    font-size: 175%;
+    color: yellowgreen;
+}
+hr.green-bar{
+    border-top: green thick solid;
+    border-bottom: lawngreen thick solid;
+    margin: 0;
+}
+#fungusModal .modal-content{
+    background: lightgreen;
+}
+#mushroomModal .modal-content{
+    background: lightsalmon;
+}
+#lichenModal .modal-content{
+    background: lavender;
+}
+#vinesModal .modal-content{
+    background: lightgrey;
+}
+#mossModal .modal-content{
+    background: green;
+    color: white;
+}

@@ -1,0 +1,151 @@
+
+/* 
+    Created on : Jan 14, 2016, 6:08:14 PM
+    Author     : Grant
+*/
+
+body {
+    margin: 0px;
+}
+
+hr {
+    border-top: darkblue medium solid;
+    border-bottom: #0066cc medium solid;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-family: sans-serif;
+}
+nav.site-nav {
+    background: #0066cc;
+    text-align: center;
+
+}
+nav.site-nav a {
+    display: inline-block;
+    padding: 1em 1em;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: -5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-left: white medium solid;
+    border-top: white medium solid;
+    border-right: white medium solid;
+    margin-top: 1em;
+    background: #0080d4;
+    transition-duration: .75s;
+    font-size: 110%;
+
+}
+nav.site-nav a:hover {
+    color: #0066cc;
+    background: aliceblue;
+}
+.view-animate.ng-enter, .view-animate.ng-leave {
+    transition:all ease-out 1.5s ;
+    width:95%;
+    position: absolute;
+}
+.view-animate.ng-enter {
+    left: 100%;
+}
+.view-animate.ng-leave{
+    left: 0%;
+}
+.view-animate.ng-leave.ng-leave-active {
+    left:-100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+    left: 5%;
+}
+.view-animate-container {
+    height: 500px;
+    position: relative;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: #0066cc thick solid;
+    border-right: #0066cc thick solid;
+    overflow-y: auto;
+    padding-left: 5%;
+    padding-top: 1em;
+
+}
+nav.site-nav a.currTab {
+    background: white;
+    color: #0066cc;
+}
+
+#examples-main {
+    overflow-x: auto;
+}
+
+#examples-main #webpage-table {
+    border-collapse: collapse;
+    border: indianred medium solid;
+    font-family: sans-serif;
+    width: 95%;
+}
+#examples-main #webpage-table tr:nth-child(even){
+    background: aliceblue;
+}
+
+#examples-main #webpage-table tr:hover{
+    background: lightgoldenrodyellow;
+}
+#examples-main #webpage-table td {
+    border: black thin solid;
+    padding: 1em 1em;
+    text-align: center;
+    
+}
+#examples-main #webpage-table th {
+    border: indianred medium solid;
+    
+}
+#examples-main #webpage-table caption {
+    border: peru medium solid;
+    border-bottom: none;
+    font-size: 200%;
+    font-family: serif;
+    padding: .5em;
+}
+header h1{
+    padding-left: 5%;
+    font-family: sans-serif;
+}
+
+.check {
+    border-radius: 20px;
+    color: green;
+    width: 2em;
+    height: 2em;
+    font-size: 200%;
+    font-weight: bold;
+}
+.preview-card{
+    vertical-align: top;
+}
+#home-intro { 
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+#gnome-egg {
+    display: inline-block;
+    margin-left: 6%;
+    margin-top: 15px;
+    width: 35%;
+}
+#gnome-egg img {
+    width: 100%;
+    height: auto;
+
+}

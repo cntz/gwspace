@@ -1,0 +1,55 @@
+
+<style>
+    .preview-card {
+        display: inline-block;
+        border: #0066cc medium solid;
+        box-shadow: gray 3px 3px 5px;
+        border-radius: 10px;
+        width: 30%;
+        margin: 1%;
+        text-align: center;
+
+    }
+
+    .preview-card:hover{
+        background: aliceblue;
+    }
+    .preview-card img {
+        width: 95%;
+        margin: 2.5%;
+        border-radius: 5px;
+        border: #0080d4 medium solid;
+        box-sizing: border-box;
+    }
+    .preview-card h3 {
+        background: #0066cc;
+        color: white;
+    }
+</style>
+
+<div id="home">
+    <div id="home-intro" >
+        <h2 >
+            Description
+        </h2>
+        <p>This webpage is an exhibition of web development projects & experiments created by Grant Wilson.</p>
+        <p>The <a href="#examples" ng-click="pc.setTab(2);"  >Examples Tab</a> contains a table of webpages where
+            the usage of specific tools and frameworks are indicated.</p>
+        <p>For all questions, comments, suggestions, jokes and jests, please refer to <a href="#contact" ng-click="pc.setTab(4)">The Contact Tab</a></p>
+        <hr>
+    </div>
+
+    <div id="gnome-egg">
+        <img src="grd.png" alt="gnome graphic">
+    </div>
+
+
+    <section >
+        <h2>Featured</h2>
+        <a ng-repeat="page in pc.featured" ng-href="{{page.url}}" target="_new"><div class="preview-card" >
+                <h3 ng-bind="page.name"></h3>
+                <img ng-src="{{page.imgurl}}">
+                <p ng-bind="page.description"></p>
+            </div></a>
+    </section>
+</div>

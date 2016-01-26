@@ -1,0 +1,57 @@
+{
+    "examples": [
+        {
+            "name": "Bakery",
+            "html5": true,
+            "css": true,
+            "js": false,
+            "angular": false,
+            "responsive": true,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "examples/bakery/bakery.html",
+            "description": "A local bakery static webpage"
+        },
+        {
+            "name": "Celestial",
+            "html5": true,
+            "css": true,
+            "js": false,
+            "angular": false,
+            "responsive": true,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "examples/sun/index.html",
+            "description": "A responsive design created using bootstrap, css animations, and fixed backgrounds."
+        },
+        {
+            "name": "Fungus",
+            "html5": true,
+            "css": true,
+            "js": false,
+            "angular": false,
+            "responsive": true,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "examples/fungus/index.html",
+            "description": "Work in progess. Features bootstrap carousel and animated buttons."
+        },
+        {
+            "name": "grantwilson.space",
+            "html5": true,
+            "css": true,
+            "js": true,
+            "angular": true,
+            "responsive": false,
+            "mysql": false,
+            "php": false,
+            "experimental": false,
+            "url": "#",
+            "description": "An portfolio exhibition webpage... :-)"
+        }
+
+    ]
+}

@@ -1,0 +1,22 @@
+
+
+
+<div id="examples-main">
+    <table id="webpage-table">
+        <caption>Project Examples</caption>
+        <!-- This is where the examples will go with checkboxes for features that the websites use like angular bootstrap responsive etc. -->
+        <th ng-repeat="key in pc.getKeys()">{{key}}</th>
+        <tr ng-repeat="example in pc.examples"> 
+            <td><a ng-bind="example.name" ng-href="{{example.url}}" target="_new"></a></td>
+            <td><span class="check">{{ example.html5?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.css?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.js?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.angular?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.responsive?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.mysql?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.php?"&#x2713;":""}}</span></td>
+            <td><span class="check">{{ example.experimental?"&#x2713;":""}}</span></td>
+        </tr>
+    </table>
+</div>
+

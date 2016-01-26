@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fungus Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <!-- end fonts -->
+
+        <link rel="stylesheet" href="css/fungus.css"/>
+
+    </head>
+    <body >
+        <nav class="top-nav ">
+            <a>Nav 1</a>
+            <a>Nav 2</a>
+            <a>Nav 3</a>
+            <a>Nav 4</a>
+            <a>Nav 5</a>
+        </nav>
+        <div class="container-flow">
+            <div class="row bg-primary">
+                <div class="col-sm-2 bg-primary" >
+                    <ul class="fungal-list">
+
+                        <li data-toggle="modal" data-target="#fungusModal">
+                            Fungus
+                        </li>
+                        <li data-toggle="modal" data-target="#mushroomModal">
+                            Mushrooms
+                        </li>
+                        <li data-toggle="modal" data-target="#lichenModal">
+                            Lichen
+                        </li>
+                        <li data-toggle="modal" data-target="#mossModal">
+                            Moss
+                        </li>
+                        <li data-toggle="modal" data-target="#vinesModal">
+                            Vines
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-8" >
+                    <div id="myCarousel" class="carousel slide bg-primary" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                                <img src="img/moss1.jpg" alt="Chania" >
+                                <div class="carousel-caption">
+                                    <h1>Moss</h1>
+                                    <p>This is a caption...</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/moss2.jpg" alt="Chania" >
+                                <div class="carousel-caption">
+                                    <h1>Vines</h1>
+                                    <p>This is another caption...</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/moss3.jpg" alt="Chania" >
+                                <div class="carousel-caption">
+                                    <h1>Moss</h1>
+                                    <p>This is a caption for moss on a tree.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/moss4.jpg" alt="Chania" >
+                                <div class="carousel-caption">
+                                    <h1>Mushrooms</h1>
+                                    <p>This is a caption for a stellar fungal picture!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="col-sm-2">
+                    <h1>Fungi</h1>
+                    <p>
+                        A fungus (/ˈfʌŋɡəs/; plural: fungi[3] or funguses[4]) is any member of the group of eukaryotic organisms that includes unicellular microorganisms such as yeasts and molds, as well as multicellular fungi that produce familiar fruiting forms known as mushrooms. These organisms are classified as a kingdom, Fungi, which is separate from the other life kingdoms of plants, animals, protists, and bacteria.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="green-bar">
+
+            <div id="infoPanel"></div>
+
+
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row bg-info">
+                <div class="col-sm-3 text-center">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"> <h4>Chanterelle</h4><img src="img/mush1.jpg" class="img-responsive img-circle " style="cursor: pointer;" data-toggle="collapse" data-target="#chanterelleDesc"></div>
+                        <div class="panel-body"><p id="chanterelleDesc" class="collapse">
+                                <strong>Cantharellus cibarius</strong>, commonly known as the chanterelle, or girolle, is a fungus. It is probably the best known species of the genus Cantharellus, if not the entire family of Cantharellaceae. It is orange or yellow, meaty and funnel-shaped. On the lower surface, underneath the smooth cap, it has gill-like ridges that run almost all the way down its stipe, which tapers down seamlessly from the cap. It emits a fruity aroma, reminiscent of apricots and a mildly peppery taste (hence its German name, Pfifferling) and is considered an excellent edible mushroom.</p></div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"> <h4>Jack-O-Lantern</h4><img src="img/mush2.jpg" class="img-responsive img-circle " style="cursor: pointer;" data-toggle="collapse" data-target="#lanternDesc"></div>
+                        <div class="panel-body"><p id="lanternDesc" class="collapse">
+                                <strong>Omphalotus olearius</strong>, commonly known as the jack-o'-lantern mushroom, is a poisonous orange gilled mushroom that to an untrained eye appears similar to some chanterelles. It is notable for its bioluminescent properties.[citation needed] It is found in woodland areas in Europe, where it grows on decaying stumps, buried roots or at the base of hardwood trees. A similar, but phylogenetically distinct[2] species found in eastern North America is Omphalotus illudens.</p></div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"> <h4>Jack-O-Lantern</h4><img src="img/mush3.jpg" class="img-responsive img-circle " style="cursor: pointer;" data-toggle="collapse" data-target="#lantern2Desc"></div>
+                        <div class="panel-body"><p id="lantern2Desc" class="collapse">
+                                The jack-o'-lantern mushroom is orange. Its bioluminescence, a blue-green color, can be observed in fresh specimens in low light conditions once the eye becomes dark-adapted. The whole mushroom doesn't glow — only the gills do so. This is due to an enzyme called luciferase, acting upon a compound called luciferin, leading to the emission of light much as fireflies do when glowing
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"> <h4>Panellus stipticus</h4><img src="img/mush4.jpg" class="img-responsive img-circle " style="cursor: pointer;" data-toggle="collapse" data-target="#panellusDesc"></div>
+                        <div class="panel-body"><p id="panellusDesc" class="collapse">
+                                <strong>Panellus stipticus</strong>, commonly known as the bitter oyster, the astringent panus, the luminescent panellus, or the stiptic fungus, is a species of fungus in the family Mycenaceae, and the type species of the genus Panellus. A common and widely distributed species, it is found in Asia, Australasia, Europe, and North America, where it grows in groups or dense overlapping clusters on the logs, stumps, and trunks of deciduous trees, especially beech, oak, and birch. During the development of the fruit bodies, the mushrooms start out as tiny white knobs, which, over a period of one to three months, develop into fan- or kidney-shaped caps that measure up to 3 cm (1.2 in) broad. The caps are orange-yellow to brownish, and attached to the decaying wood by short stubby stalks that are connected off-center or on the side of the caps. The fungus was given its current scientific name in 1879, but has been known by many names since French mycologist Jean Bulliard first described it as Agaricus stypticus in 1783. Molecular phylogenetic analysis revealed P. stipticus to have a close genetic relationship with members of the genus Mycena.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div id="fungusModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Fungus</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Fungi have a worldwide distribution, and grow in a wide range of habitats, including extreme environments such as deserts or areas with high salt concentrations[31] or ionizing radiation,[32] as well as in deep sea sediments.[33] Some can survive the intense UV and cosmic radiation encountered during space travel.[34] Most grow in terrestrial environments, though several species live partly or solely in aquatic habitats, such as the chytrid fungus Batrachochytrium dendrobatidis, a parasite that has been responsible for a worldwide decline in amphibian populations. This organism spends part of its life cycle as a motile zoospore, enabling it to propel itself through water and enter its amphibian host.[35] Other examples of aquatic fungi include those living in hydrothermal areas of the ocean.[36]</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mushroomModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Mushrooms</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>A mushroom (or toadstool) is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground on soil or on its food source.
+
+                                The standard for the name "mushroom" is the cultivated white button mushroom, Agaricus bisporus; hence the word "mushroom" is most often applied to those fungi (Basidiomycota, Agaricomycetes) that have a stem (stipe), a cap (pileus), and gills (lamellae, sing. lamella) on the underside of the cap. These gills produce microscopic spores that help the fungus spread across the ground or its occupant surface.
+
+                                "Mushroom" describes a variety of gilled fungi, with or without stems, and the term is used even more generally, to describe both the fleshy fruiting bodies of some Ascomycota and the woody or leathery fruiting bodies of some Basidiomycota, depending upon the context of the word.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="lichenModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Lichen</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>A lichen is a composite organism that arises from algae or cyanobacteria (or both) living among filaments of a fungus in a symbiotic relationship.[1][2][3] The combined life form has properties that are very different from the properties of its component organisms. Lichens come in many colors, sizes, and forms. The properties are sometimes plant-like, but lichens are not plants. Lichens may have tiny, leafless branches (fruticose), flat leaf-like structures (foliose), flakes that lie on the surface like peeling paint (crustose),[4] or other growth forms.[5] A macrolichen is a lichen that is either bush-like or leafy; all other lichens are termed microlichens.[1] Here, "macro" and "micro" do not refer to size, but to the growth form.[1] Common names for lichens may contain the word "moss" (e.g., "Reindeer moss", "Iceland moss"), and lichens may superficially look like and grow with mosses, but lichens are not related to mosses or any plant.[3]:3 Lichens do not have roots that absorb water and nutrients as plants do[6]:2 but like plants they produce their own food by photosynthesis using sunlight energy, from carbon dioxide, water and minerals in their environment.[7] When they grow on plants, they do not live as parasites and only use the plants as a substrate.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="mossModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Moss</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Mosses are small flowerless plants that typically grow in dense green clumps or mats, often in damp or shady locations. The individual plants are usually composed of simple, one-cell thick leaves, attached to a stem that may be branched or unbranched and has only a limited role in conducting water and nutrients. Although some species have vascular tissue this is generally poorly developed and structurally different from similar tissue found in other plants.[3] They do not have seeds and after fertilisation develop sporophytes (unbranched stalks topped with single capsules containing spores). They are typically 0.2–10 cm (0.1–3.9 in) tall, though some species are much larger, like Dawsonia, the tallest moss in the world, which can grow to 50 cm (20 in) in height.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="vinesModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Vines</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>A vine (Latin vīnea "grapevine", "vineyard", from vīnum "wine") in the narrowest sense is the grapevine (Vitis), but more generally it can refer to any plant with a growth habit of trailing or scandent (that is, climbing) stems or runners. The word also can refer to such stems or runners themselves, for instance when used in wicker work.[1][2]
+
+                                In the United Kingdom, the term "vine" applies almost exclusively to the grapevine. The term "climber" is used for all climbing plants.[3]</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </body>
+</html>
