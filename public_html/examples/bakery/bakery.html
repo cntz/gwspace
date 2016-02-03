@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Responsive Bakery</title>
@@ -19,10 +15,12 @@ and open the template in the editor.
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
         <!-- begin page styling -->
         <style>
             body {
-                background: lightgoldenrodyellow;
+                background: mintcream;
             }
             #main-nav{
                 z-index: 10;
@@ -30,44 +28,119 @@ and open the template in the editor.
             #specials-car .carousel-inner{
                 height: 100px;
             }
+            #specials-car .item {
+                font-size: 250%;
+                font-family: 'Shadows Into Light', cursive;
+            }
+            .affix {
+                top: 0;
+                width: 100%;
+            }
+            iframe{
+                border: red dashed medium;
+                overflow-y: scroll;
+                width: 100%;
+            }
+            #menu{
+                height: 400px;
+            }
+            .pb{
+                height:100px; background-image: url(img/bakery.jpg); background-attachment: fixed;
+            }
+            footer {
+                padding: 2em;
+                color: firebrick;
+                font-family: 'Shadows Into Light';
+                font-size: 150%;
+            }
         </style>
         <!-- end page styling -->
 
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container">
 
-            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="1" id="main-nav">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Basic Topnav</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                </ul>
-            </nav>
-
-            <div id="specials-car" class="carousel slide col-md-12 col-sm-9 hidden-xs col-md-offset-0" data-ride="carousel">
+            <div id="specials-car" class="carousel slide col-sm-12 col-md-offset-0" data-ride="carousel">
 
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner " role="listbox">
 
-                    <div class="item active" style="background: linear-gradient(white,blue);">
-                        Catering
+                    <div class="item active" style="background: linear-gradient(to right, white,blue);">
+                        <svg> <text x='50' y='50' textLength='200px'>Catering</text></svg>
                     </div>
-                    <div class="item" style="background: linear-gradient(to right, red,green);">
-                        Hosting
+                    <div class="item" style="background: linear-gradient(to right, blue,lightgreen); ">
+                        <svg> <text x='50' y='50' textLength='200px' fill='white'>Hosting</text></svg>
                     </div>
-                    <div class="item">
+                    <div class="item" style="background: linear-gradient(to right, lightgreen, aliceblue); ">
+                        <svg> <text x='50' y='50' textLength='200px' >Parties</text></svg>
                     </div>
-                    <div class="item">
+                    <div class="item" style='background: linear-gradient(to right, aliceblue, white);'>
+                        <svg> <text x='50' y='50' textLength='200px'>Gormet Food</text></svg>
                     </div>
 
                 </div>
 
             </div>
-
-
         </div>
+
+        <nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="100" id="main-nav">
+            <div class="navbar-header">
+                <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#my-navbar'>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class='navbar-brand'>Local Portland Bakery</a>
+            </div>
+            <div class='navbar-collapse collapse' id='my-navbar'>
+                <ul class="nav navbar-nav ">
+                    <li class='active'><a href="#" >Home</a></li>
+                    <li><a href="#">Hours</a></li>
+                    <li class='dropdown'><a href="#" class='dropdown-toggle' data-toggle="dropdown">About <i class="caret"></i></a>
+                        <ul class="list-unstyled dropdown-menu">
+                            <li><a>Directions</a></li>
+                            <li><a>Meet The Staff</a></li>
+                            <li><a>Our Mission</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid hidden-xs pb"></div>
+
+        <div class='container'>
+            <div class='row ' style="padding-top: 1em">
+                <ul class='nav nav-pills nav-stacked col-md-4' >
+                    <li class='active'><a onclick="menuShift('#head')" target="menu-frame">Menu-All</a></li>
+                    <li><a onclick="menuShift('#breads');" >Breads</a></li>
+                    <li><a onclick="menuShift('#pastries')" target="menu-frame">Pastries</a></li>
+                    <li><a onclick="menuShift('#deserts')" target="menu-frame">Deserts</a></li>
+                    <li><a onclick="menuShift('#sandwiches')" target="menu-frame">Sandwiches</a></li>
+                </ul>
+                <div class='col-md-8'>
+                    <iframe name='menu-frame' id="menu" src='menu.html'></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid hidden-xs pb"></div>
+        <div class='container-fluid bg-info'>
+            <footer>
+                <ul class='list-unstyled '>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>Directions</li>
+                    <li>Hours</li>
+                </ul>
+            </footer>
+        </div>
+        <script>
+            function menuShift(aid) {
+                var y = $("#menu").contents().find(aid).offset().top;
+                $('#menu').contents().find('body').animate({scrollTop: y});
+            }
+
+        </script>
     </body>
 </html>
