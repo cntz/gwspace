@@ -20,7 +20,7 @@
         <!-- begin page styling -->
         <style>
             body {
-                background: mintcream;
+                background: linear-gradient(to bottom, mintcream, lightgreen);
             }
             #main-nav{
                 z-index: 10;
@@ -43,6 +43,7 @@
             }
             #menu{
                 height: 400px;
+                border-radius: 20px;
             }
             .pb{
                 height:100px; background-image: url(img/bakery.jpg); background-attachment: fixed;
@@ -52,6 +53,7 @@
                 color: firebrick;
                 font-family: 'Shadows Into Light';
                 font-size: 150%;
+                
             }
         </style>
         <!-- end page styling -->
@@ -111,7 +113,7 @@
         <div class="container-fluid hidden-xs pb"></div>
 
         <div class='container'>
-            <div class='row ' style="padding-top: 1em">
+            <div class='row panel' style="padding-top: 1em">
                 <ul class='nav nav-pills nav-stacked col-md-4' >
                     <li class='active'><a onclick="menuShift('#head')" target="menu-frame">Menu-All</a></li>
                     <li><a onclick="menuShift('#breads');" >Breads</a></li>
@@ -125,7 +127,7 @@
             </div>
         </div>
         <div class="container-fluid hidden-xs pb"></div>
-        <div class='container-fluid bg-info'>
+        <div class='container bg-info'>
             <footer>
                 <ul class='list-unstyled '>
                     <li>Contact</li>
