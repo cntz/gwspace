@@ -140,9 +140,8 @@
         <script>
             function menuShift(aid) {
                 var y = $("#menu").contents().find(aid).offset().top;
-                $('#menu').contents().find('body').animate({scrollTop: y});
+                $('#menu').contents().find('body,html').animate({scrollTop: y});
             }
-
         </script>
     </body>
 </html>
